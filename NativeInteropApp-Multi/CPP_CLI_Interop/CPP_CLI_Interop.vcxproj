@@ -75,14 +75,12 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -95,7 +93,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies />
+      <AdditionalDependencies>InteropLibrary.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -106,7 +104,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies />
+      <AdditionalDependencies>InteropLibrary.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -116,7 +114,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies />
+      <AdditionalDependencies>InteropLibrary.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -126,15 +124,9 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies />
+      <AdditionalDependencies>InteropLibrary.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <!--<ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>-->
   <ItemGroup>
     <ClInclude Include="CPPCLIInterop.h" />
     <ClInclude Include="Exports.h" />
@@ -162,6 +154,9 @@
   <ItemGroup>
     <ProjectReference Include="..\CSharp\CSharp.csproj">
       <Project>{32d8a9f9-f49d-4606-8920-8161f2be686b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\InteropLibrary\InteropLibrary.vcxproj">
+      <Project>{dac61760-9b5a-4b86-899e-44e6a2f42fed}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
