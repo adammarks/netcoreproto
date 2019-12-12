@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{5D900652-5223-421C-8E0E-A916414394DA}</ProjectGuid>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <Keyword>ManagedCProj</Keyword>
     <RootNamespace>CPPCLIInteropLibrary</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
@@ -157,6 +157,9 @@
     <ProjectReference Include="..\NativeDLL\NativeDLL.vcxproj">
       <Project>{4fcb1ab9-2f37-4037-a488-265a0fb6bd20}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.WindowsDesktop.App.WindowsForms" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
