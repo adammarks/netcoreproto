@@ -89,6 +89,7 @@
     <Link>
       <AdditionalDependencies />
       <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -101,6 +102,7 @@
     <Link>
       <AdditionalDependencies />
       <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -113,6 +115,7 @@
     <Link>
       <AdditionalDependencies />
       <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -125,6 +128,7 @@
     <Link>
       <AdditionalDependencies />
       <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -151,12 +155,9 @@
   <ItemGroup>
     <Image Include="app.ico" />
   </ItemGroup>
-
   <ItemGroup>
     <FrameworkReference Include="Microsoft.WindowsDesktop.App" />
   </ItemGroup>
-
-
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

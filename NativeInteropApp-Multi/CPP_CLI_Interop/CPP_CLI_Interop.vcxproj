@@ -96,6 +96,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>InteropLibrary.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -107,6 +108,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>InteropLibrary.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -117,6 +119,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>InteropLibrary.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -127,6 +130,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>InteropLibrary.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
