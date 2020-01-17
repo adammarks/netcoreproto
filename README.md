@@ -1,7 +1,21 @@
 # netcoreproto
 .NET Core C++/CLI Prototypes
 
-NativeInteropApp - Demonstrates a C++/CLI interop app that has a native entry point with a single C++/CLI assemblies
 
-NativeInteropApp-Multi - Demonstrates a C++/CLI interop app that has a native entry point with multiple C++/CLI assemblies
+## Native Entry Point Interop Examples
+------
+### NativeInteropApp
+- C++/CLI interop app that has a single C++/CLI assembly and Windows Forms
+
+### NativeInteropApp-Multi
+- C++/CLI interop app that has multiple C++/CLI assemblies and Windows Forms
+
+### NativeInteropApp-WPF-Multi
+- C++/CLI interop app that has multiple C++/CLI assemblies and WPF
+
+
+## Managed Entry Point Interop Examples
+------
+### ManagedInteropApp 
+- C++/CLI interop app that has a Managed entry point
 
