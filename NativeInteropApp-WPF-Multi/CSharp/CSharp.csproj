@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <!--<TargetFramework>net472</TargetFramework>-->
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <!--<UseWindowsForms>true</UseWindowsForms>-->
+    <UseWPF>true</UseWPF>
+    <RootNamespace>CSharp</RootNamespace>
+    <AssemblyName>CSharp</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+</Project>
