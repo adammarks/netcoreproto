@@ -183,4 +183,13 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+
+  <!-- Workaround to get WPF included -->
+  <Target Name="_WorkaroundHandlePackageFileConflicts"
+          BeforeTargets="ClCompile"
+          AfterTargets="ResolveTargetingPackAssets"
+          DependsOnTargets="_HandlePackageFileConflicts">
+  </Target>
+
 </Project>
+
