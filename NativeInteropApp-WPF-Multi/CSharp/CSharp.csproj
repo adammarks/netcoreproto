@@ -8,5 +8,6 @@
     <RootNamespace>CSharp</RootNamespace>
     <AssemblyName>CSharp</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <OutputPath>..\x64\$(Configuration)</OutputPath>
   </PropertyGroup>
 </Project>
